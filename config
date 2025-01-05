@@ -1,0 +1,43 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/janitha-visna/banana_game.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "backend"]
+	remote = origin
+	merge = refs/heads/backend
+[branch "frontend"]
+	remote = origin
+	merge = refs/heads/frontend
+[branch "feature/scoreboard"]
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/feature/scoreboard
+[branch "feature/socket"]
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/feature/socket
+[branch "feature/score_calculate"]
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/feature/score_calculate
+[branch "hotfix"]
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/hotfix
+[branch "protect_routes"]
+	vscode-merge-base = origin/hotfix
+	remote = origin
+	merge = refs/heads/protect_routes
+[branch "feature/image_upload"]
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/feature/image_upload
